@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mastercard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body">
+<div class="main">
+    <div class="top">
+        <img  class="s" src="mastercard.jfif">
+        <p>Master Card</p>
+        <img class="s" id="ss" src="mastercard.jfif">
+    </div>
+    <div class="mid1">
+        <p>Card Number</p>
+    </div>
+    <div class="mid2">
+        <p>8050 5040 3020 5060</p>
+    </div>
+    <div class="end" id="one">
+        <p>Prem Kumar Shahi</p>
+    
+        <ul>
+            <li>Valid Thru</li>
+            <li>05/28</li>
+        </ul>
+    </div>
+    <div class="dark_mode" >
+        <i class="fa-solid fa-sun" id="sun" onclick="toogle()"></i>
+        <!-- <i class="fa-solid fa-moon"></i> -->
+    </div>
+    <div class="dark_mode1" onclick="toogle()">
+        <!-- <i class="fa-solid fa-sun" id="sun"></i> -->
+        <i class="fa-solid fa-moon"></i>
+    </div>
+</div>
+<script>
+    const sun=document.querySelector('.fa-sun');
+    const moon=document.querySelector('.fa-moon');
+    const box=document.querySelector('.dark_mode');
+    const box1=document.querySelector('.dark_mode1');
+
+
+function toogle(e){
+    box1.classList.toggle('hide');
+    document.getElementById('body').classList.toggle('change')
+};    
+function darkmode(e){}
+</script>
+</body>
+</html>
